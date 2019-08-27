@@ -13,7 +13,8 @@ eureka:
  
  
 
-#服务器的id和访问路径与一致时,可以不写.  
+
+#服务器的id和访问路径与一致时,可以不写 
 zuul:
   retryable: true
   sensitive-headers:
