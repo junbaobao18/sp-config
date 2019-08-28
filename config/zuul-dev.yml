@@ -2,6 +2,11 @@ spring:
   application:
     name: zuul
     
+  rabbitmq:
+    host: 192.168.74.132
+    port: 5672
+    username: admin
+    password: admin  
 #关闭sp09,端口号让出    
 server:
   port: 3001
@@ -13,8 +18,7 @@ eureka:
  
  
 
-
-#服务器的id和访问路径与一致时,可以不写 
+#服务器的id和访问路径与一致时,可以不写     
 zuul:
   retryable: true
   sensitive-headers:
